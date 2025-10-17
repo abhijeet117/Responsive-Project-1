@@ -104,7 +104,10 @@ main {
   /* Section3 */
 
   .section3 {
+    @include flex-column(1rem);
     padding: 1rem;
+    
+
     
     
     .s3-image{
@@ -117,13 +120,20 @@ main {
 
     .s3-text {
       background-color: #1e1e1e;
-      padding: 1rem;
+      @include flex-column(3rem);
+      border-radius: 1rem;
+      padding: 1.5rem;
+
+      
 
       .inner-txt {
+        
+
+      @include flex-column(1.4rem);
         h2 {
           text-transform: uppercase;
           font-weight: 400;
-          font-size: 2.7rem;
+          font-size: 2.8rem;
         }
 
         p {
@@ -193,6 +203,15 @@ main {
             font-weight: 400;
           }
         }
+      }
+    }
+
+    .section3 {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .s3-image, .s3-text{
+        width: 50%;
       }
     }
   }
