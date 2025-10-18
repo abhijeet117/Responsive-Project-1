@@ -28,6 +28,7 @@ main {
   gap: 0rem;
   /* Section2 */
   /* Section3 */
+  /* Section4 */
 }
 main .section1 {
   display: flex;
@@ -123,6 +124,52 @@ main .section3 .s3-text .inner-txt p {
   font-size: 1.4rem;
   line-height: 1.5;
 }
+main .section4 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section4 .card {
+  width: 100%;
+  background-image: url(./assets/card1.webp);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main .section4 .card .top {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+main .section4 .card .top .ca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  background-color: rgba(37, 36, 36, 0.3529411765);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main .section4 .card .bottom {
+  background-color: rgba(37, 36, 36, 0.3529411765);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 1rem 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
 
 @media (min-width: 900px) {
   main .section1 {
@@ -174,10 +221,39 @@ main .section3 .s3-text .inner-txt p {
     font-weight: 400;
   }
   main .section3 {
-    display: flex;
     flex-direction: row-reverse;
+    padding: 1rem 3rem;
   }
   main .section3 .s3-image, main .section3 .s3-text {
     width: 50%;
+  }
+  main .section3 .s3-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .section3 .s3-text .inner-txt h2 {
+    font-size: 3rem;
+  }
+  main .section3 .s3-text .inner-txt .inner-txt-p {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .section3 .s3-text .inner-txt .inner-txt-p p {
+    font-size: 0.9rem;
+  }
+  main .second {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main .section4 {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+  }
+  main .section4 .card .top {
+    padding: 1rem;
+  }
+  main .section4 .card .top .ca {
+    padding: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
